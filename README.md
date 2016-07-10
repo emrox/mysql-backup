@@ -22,6 +22,12 @@ This is a script I use for creating backups for my servers MySQL databases and s
 on liner for debian based distributions:  
 `apt-get install mysql-client bzip2 gnupg ncftp`
 
+## Hints
+
+* instead of storing the passwords within the script, i use files in my backup users home dir with chmod 400. so i can easily change the passwords which are also used by other backup tools
+	* mysql: use ~/.my.cnf
+	* ftp: use this instead of a string: `FTPPASS=$(cat ~/.ftp_password)`
+
 ## ToDo
 
 * options for / switch from ftp to sftp/scp/whatever
