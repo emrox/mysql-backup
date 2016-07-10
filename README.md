@@ -33,3 +33,4 @@ on liner for debian based distributions:
 * options for / switch from ftp to sftp/scp/whatever
 * support other compressions
 * support other encryption methods
+* better configurable skipable databases
